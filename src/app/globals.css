@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: oklch(0.115 0 0);
-  --color-foreground: oklch(0.941 0.002 326);
-  --color-accent: oklch(0.735 0.128 112.394);
+  --color-background: oklch(11.5% 0 0);
+  --color-foreground: oklch(94% 0 326);
+  --color-accent: oklch(95% 0.17793 105);
+  --color-accent-muted: oklch(87% 0.17793 105);
 }
 
 :root {

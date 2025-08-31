@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${notoSans.variable} antialiased`}
       >
         <NavMenu />
-        <main>{children}</main>
+        <main className="ml-40 overflow-y-auto h-screen p-2">{children}</main>
       </body>
     </html>
   );

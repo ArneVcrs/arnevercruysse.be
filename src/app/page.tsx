@@ -1,10 +1,7 @@
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
-        <h1>Hi, I&apos;m Arne!</h1>
-        <p>This website is currently under construction, coming soon :D</p>
-      </main>
+    <div>
+      
     </div>
   );
 }
