@@ -25,7 +25,7 @@ export default function NavMenu() {
                     className="my-3"
                 />
             </Link>
-            <ul className="w-full">
+            <ul className="w-full flex flex-col items-center">
                 {navItems.map((item) => {
                     const isActive = currentRoute === item.href;
 
@@ -33,7 +33,7 @@ export default function NavMenu() {
                         <li key={item.href}>
                             <Link
                                 href={item.href}
-                                className={`font-medium block w-35 px-1 ${
+                                className={`text-center font-medium block w-30 px-1 rounded-md mb-2 ${
                                     isActive ?
                                 "bg-accent text-background hover:bg-accent" : "hover:bg-accent-muted hover:text-background"}`}
                             >
