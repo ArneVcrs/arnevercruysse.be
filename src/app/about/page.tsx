@@ -37,7 +37,7 @@ const AboutPage = () => {
       <section>
         <h2>My Setup</h2>
         <p>
-          For the fellow devlopers and computer enthousiasts out there. I have 2 main systems. My laptop runs Windows and my
+          For the fellow developers and computer enthousiasts out there. I have 2 main systems. My laptop runs Windows and my
           desktop has a Windows and Arch Linux (btw) dual-boot. The only reason I still use windows is for some Adobe
           software and gaming. Currently I don&apos;t play any games that are not Linux-compatible but I want to have the option
           available.
