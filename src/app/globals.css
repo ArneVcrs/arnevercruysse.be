@@ -30,8 +30,15 @@ h2 {
 
 p {
   margin-top: 1.8rem;
-  max-width: 40%;
+  max-width: 95%;
   line-height: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    max-width: 45%;
+    width: auto;
+  }
 }
 
 h1+p, h2+p {
@@ -44,4 +51,8 @@ em {
 
 section {
   margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
 }

@@ -21,11 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${notoSans.variable} antialiased`}
-      >
+      <body className={`${notoSans.variable} antialiased`}>
         <NavMenu />
-        <main className="ml-40 overflow-y-auto h-screen p-2">{children}</main>
+        <main className="md:ml-40 overflow-y-auto h-screen p-4">{children}</main>
       </body>
     </html>
   );
