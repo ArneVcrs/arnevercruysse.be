@@ -4,7 +4,7 @@ import tools from "@/content/about/tools.json"
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
       <section>
         <h1>About</h1>
         <p>
@@ -50,7 +50,7 @@ const AboutPage = () => {
         </ul>
         <p>Don&apos;t hesitate to reach out, <a href="malto:arne@arnevercruysse.be" className="text-accent underline">send me an email!</a></p>
       </section>
-    </div>
+    </>
   );
 };
 
