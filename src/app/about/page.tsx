@@ -28,7 +28,7 @@ const AboutPage = () => {
         <p>Since I&apos;m still studying, I have only worked student jobs in the summer vaction.</p>
         <p>
           My professional experience is a unique blend of customer service and administration. I&apos;ve spent six summers
-          perfecting my skills as a professional ice cream scooper and waffle baker. Ove the past three years, I&apos;ve managed
+          perfecting my skills as a professional ice cream scooper and waffle baker. Over the past three years, I&apos;ve managed
           to combine this role with medical administration at my local hospital&apos;s orthopedics department. In 2023, I 
           also have worked as an accounting assistant for 6 weeks.    
         </p>
@@ -45,10 +45,10 @@ const AboutPage = () => {
         <p>Here&apos;s a list of tools I use on a daily basis:</p>
         <ul>
           {tools.map((tool, idx) => (
-            <li key={idx} className="list-disc ml-6 mt-0.5"><a href={tool.link}>{tool.name}</a></li>
+            <li key={idx} className="list-disc ml-6 mt-0.5"><a href={tool.link} className="underline font-medium">{tool.name}</a></li>
           ))}
         </ul>
-        <p>Don&apos;t hesitate to reach out, <a href="malto:arne@arnevercruysse.be" className="text-accent underline">send me an email!</a></p>
+        <p>Don&apos;t hesitate to reach out, <a href="malto:arne@arnevercruysse.be" className="text-accent underline font-medium">send me an email!</a></p>
       </section>
     </>
   );
