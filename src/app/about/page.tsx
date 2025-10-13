@@ -48,7 +48,7 @@ const AboutPage = () => {
             <li key={idx} className="list-disc ml-6 mt-0.5"><a href={tool.link} className="underline font-medium">{tool.name}</a></li>
           ))}
         </ul>
-        <p>Don&apos;t hesitate to reach out, <a href="malto:arne@arnevercruysse.be" className="text-accent underline font-medium">send me an email!</a></p>
+        <p>Don&apos;t hesitate to reach out, <a href="mailto:&#97;&#114;&#110;&#101;&#64;&#97;&#114;&#110;&#101;&#118;&#101;&#114;&#99;&#114;&#117;&#121;&#115;&#115;&#101;&#46;&#98;&#101;" className="text-accent underline font-medium">send me an email!</a></p>
       </section>
     </>
   );
