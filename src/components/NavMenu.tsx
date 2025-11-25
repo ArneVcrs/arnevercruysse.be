@@ -7,7 +7,6 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-    { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
     { href: "/music", label: "Music" },
