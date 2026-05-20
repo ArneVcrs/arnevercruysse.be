@@ -1,11 +1,11 @@
 <picture>
   <source
-    [attr.srcset]="srcSet"
+    [attr.srcset]="srcSet()"
   />
   <img
-    [src]="src"
-    [attr.alt]="alt"
-    [attr.width]="width"
-    [attr.height]="height"
+    [src]="src()"
+    [attr.alt]="alt()"
+    [attr.width]="width()"
+    [attr.height]="height()"
   />
 </picture>

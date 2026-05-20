@@ -1,10 +1,10 @@
 <picture>
-  <source [attr.srcset]="srcSet" type="image/webp" />
+  <source [attr.srcset]="srcSet()" type="image/webp" />
   <img
-    [src]="src"
-    [attr.alt]="alt"
-    [attr.width]="width"
-    [attr.height]="height"
+    [src]="src()"
+    [attr.alt]="alt()"
+    [attr.width]="width()"
+    [attr.height]="height()"
     loading="lazy"
   />
 </picture>

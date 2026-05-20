@@ -1,27 +1,23 @@
-import { Component, Input } from "@angular/core";
+import { Component, input, computed, ChangeDetectionStrategy } from "@angular/core";
 import config from '../../../../config.json';
+
+interface AppConfig {
+  imagesBaseUrl?: string;
+}
 
 @Component({
   selector: "app-thumbnail",
-  templateUrl: "./thumbnail.component.html"
+  templateUrl: "./thumbnail.component.html",
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Thumbnail {
+  private base = computed(() => (config as AppConfig).imagesBaseUrl ?? '');
 
-  @Input() public name!: string;
-  @Input() public alt!: string;
-  @Input() public width: number = 640;
-  @Input() public height?: number;
+  public name = input.required<string>();
+  public alt = input.required<string>();
+  public width = input<number>(640);
+  public height = input<number>();
 
-  private get base(): string {
-    return (config as any).imagesBaseUrl ?? '';
-  }
-
-  public get srcSet(): string {
-    return `${this.base}/${this.name}_640.webp`;
-  }
-
-  public get src(): string {
-    return `${this.base}/${this.name}_640.jpg`;
-  }
-
+  public srcSet = computed(() => `${this.base()}/${this.name()}_640.webp`);
+  public src = computed(() => `${this.base()}/${this.name()}_640.jpg`);
 }
