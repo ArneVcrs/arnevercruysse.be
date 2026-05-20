@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "reset.css";
+
+:root {
+  --studio-bg: #131b17;
+  --spruce-green: #2b5c43;
+  --spruce-dark: #1b2620;
+  --spruce-light: #e8f0eb;
+
+  --cream-paper: #f7f4eb;
+  --cream-border: #e2ded3;
+  --text-paper: #28302c;
+  --text-light: #f7f4eb;
+
+  --gold-ochre: #c99a53;
+  --rust-terracotta: #b85e3d;
+
+  --wood-dark: #1c100b;
+  --wood-medium: #301d14;
+  --wood-light: #4c3024;
+
+  --font-headings: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-handwriting: 'Caveat', cursive;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--studio-bg);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 800;
+  color: inherit;
+}
+
+.page-content {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--text-paper);
+  padding: 3rem 4rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
