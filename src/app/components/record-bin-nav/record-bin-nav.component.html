@@ -1,0 +1,19 @@
+<nav class="record-bin">
+  <div class="sleeves-wrapper">
+    <div class="sleeves">
+      @for (r of routes; track r.path) {
+        <a
+          [routerLink]="r.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="r.exact ? { exact: true } : {}"
+          class="sleeve"
+        >
+          <span class="title">{{ r.title }}</span>
+        </a>
+      }
+    </div>
+  </div>
+  <div class="front-panel">
+    <div class="bin-label">RECORDS</div>
+  </div>
+</nav>
