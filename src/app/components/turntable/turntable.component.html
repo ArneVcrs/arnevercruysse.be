@@ -1,0 +1,34 @@
+<div class="turntable">
+  <div class="wood-chassis"></div>
+  <div class="top-plate">
+    <div class="platter">
+      <div class="record" [class.spinning]="isSpinning()">
+        <div class="grooves"></div>
+        <div class="label">
+          <span class="page-title">{{ activePage() }}</span>
+          <span class="rpm-label">STEREO</span>
+        </div>
+        <div class="spindle"></div>
+      </div>
+    </div>
+    <div class="tonearm-pivot">
+      <div class="weight"></div>
+      <div class="tonearm" [class.active]="isSpinning()"></div>
+    </div>
+    
+    <button 
+      class="start-stop-btn" 
+      (click)="toggleSpinning()" 
+      [class.stopped]="!isSpinning()"
+      aria-label="Start or stop record player"
+    ></button>
+
+    <div class="controls">
+      <div class="power-lamp" [class.glowing]="isSpinning()"></div>
+      <div class="pitch-slider">
+        <div class="pitch-knob"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
