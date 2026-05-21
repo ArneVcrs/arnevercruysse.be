@@ -8,6 +8,7 @@ interface AppConfig {
 @Component({
   selector: "app-thumbnail",
   templateUrl: "./thumbnail.component.html",
+  styleUrl: "./thumbnail.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Thumbnail {
@@ -17,6 +18,7 @@ export class Thumbnail {
   public alt = input.required<string>();
   public width = input<number>(640);
   public height = input<number>();
+  public caption = input<string | null>(null);
 
   public srcSet = computed(() => `${this.base()}/${this.name()}_640.webp`);
   public src = computed(() => `${this.base()}/${this.name()}_640.jpg`);

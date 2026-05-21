@@ -9,3 +9,6 @@
     [attr.height]="height()"
   />
 </picture>
+@if (caption()) {
+  <div class="image-caption">{{ caption() }}</div>
+}

@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  background: #ffffff;
+  padding: 0.75rem;
+  border: 1px solid var(--cream-border);
+  border-radius: 2px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+picture {
+  display: block;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail-caption {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-paper);
+  margin-top: 0.75rem;
+  text-align: center;
+  line-height: 1.2;
+}

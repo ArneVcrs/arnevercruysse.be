@@ -8,3 +8,6 @@
     loading="lazy"
   />
 </picture>
+@if (caption()) {
+  <div class="thumbnail-caption">{{ caption() }}</div>
+}
