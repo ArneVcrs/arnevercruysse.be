@@ -1,0 +1,82 @@
+.page-content {
+  gap: 2.5rem;
+}
+
+.home-content {
+  max-width: 32rem;
+}
+
+app-image {
+  width: 100%;
+  max-width: 14rem;
+  margin-left: 0;
+}
+
+@media (min-width: 48rem) {
+  .page-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .home-content {
+    flex: 1;
+  }
+
+  app-image {
+    flex: 0 0 16rem;
+    max-width: 16rem;
+    margin-left: 1rem;
+  }
+}
+
+.tagline {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-paper);
+  opacity: 0.85;
+  letter-spacing: 0.05rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dot {
+  color: var(--rust-terracotta);
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-paper);
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.sign-off {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.handwritten {
+  font-family: var(--font-handwriting);
+  font-size: 1.75rem;
+  color: var(--rust-terracotta);
+  transform: rotate(-1.5deg);
+  margin-left: 0.5rem;
+}
+
+.signature {
+  font-family: var(--font-handwriting);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--spruce-green);
+  margin-left: 2rem;
+}
