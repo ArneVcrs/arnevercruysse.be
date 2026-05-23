@@ -1,28 +1,24 @@
 import { Routes } from '@angular/router';
-import { HomePage } from './pages/home/home-page.component';
-import { AboutPage } from './pages/about/about-page.component';
-import { BlogListPage } from './pages/blog/post-list/blog-list-page.component';
-import { BlogPostPage } from './pages/blog/post-detail/blog-post-page.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomePage
+    loadComponent: () => import('./pages/home/home-page.component').then(m => m.HomePage)
   },
   {
     path: 'about',
-    component: AboutPage
+    loadComponent: () => import('./pages/about/about-page.component').then(m => m.AboutPage)
   },
   {
     path: 'blog',
     children: [
       {
         path: '',
-        component: BlogListPage
+        loadComponent: () => import('./pages/blog/post-list/blog-list-page.component').then(m => m.BlogListPage)
       },
       {
         path: '**',
-        component: BlogPostPage
+        loadComponent: () => import('./pages/blog/post-detail/blog-post-page.component').then(m => m.BlogPostPage)
       }
     ]
   }
