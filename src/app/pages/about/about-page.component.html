@@ -1,0 +1,87 @@
+<section class="page-content">
+  <div class="about-header">
+    <div>
+      <span class="card-tagline">arnev@dev:~$ whoami</span>
+      <h1>About Me</h1>
+      <p>Hi, my name is Arne! On this page you can read all about who I am, what my interests are, my education and work
+        experience and more!</p>
+    </div>
+    <app-image name="about-pfp" alt="Arne Vercruysse profile picture" [width]="240" [height]="240" loading="eager"></app-image>
+  </div>
+
+  <hr />
+
+  <section class="interests">
+    <div class="card">
+      <span>01 / TECH</span>
+      <h3>Tech</h3>
+      <p>Full-stack developer with a very broad interest in everything IT. Anything from software architecture and
+        DDD to DevOps and cybersecurity and much more.</p>
+    </div>
+    <div class="card">
+      <span>02 / MUSIC</span>
+      <h3>Music</h3>
+      <p>I'm probably listening to music right now! I love attending live concerts, exploring all kinds of music andplaying the piano. </p>
+    </div>
+    <div class="card">
+      <span>03 / SPORTS</span>
+      <h3>Sports</h3>
+      <p>Staying active through a mix of running, strength training, road cycling, swimming, and hiking.</p>
+    </div>
+    <div class="card">
+      <span>04 / READING</span>
+      <h3>Reading</h3>
+      <p>Reading non-fiction and informative books, and from time to time some fiction, always on the lookout to learn
+        something new.</p>
+    </div>
+  </section>
+
+
+  <hr />
+
+  <section class="about-section">
+    <h2>Quick Facts</h2>
+    <ul class="facts-list">
+      @for (fact of facts; track fact) {
+      <li>{{ fact }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <div class="experience-grid">
+      <div>
+        <h2>Education</h2>
+        <p>Currently studying Applied Computer Science - Software Engineering at Howest Brugge. Graduating end of June 2026
+        </p>
+      </div>
+      <div>
+        <h2>Work</h2>
+        <p>My professional experience includes a 13-week software engineering internship at Starfisk in Brugge (from
+          February to May 2026). Integrated into the development team, I worked on their payroll application, ProActor,
+          where my primary project was building a wage indexation tool, alongside contributing to various other
+          features.
+        </p>
+        <p>
+          Outside of software engineering, I have worked several student jobs during my summer vacations. This includes
+          seven summers
+          serving customer in an ice cream and waffle shop, four summers of medical administration at my local hospital's orthopedics department, and six weeks as an accounting assistant in 2023.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>My Setup</h2>
+    <p>For anyone that's interested, here's a list of tools I use on a daily basis:</p>
+    <ul class="tools-grid">
+      @for (tool of tools; track tool.name) {
+      <li>
+        <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
+          {{ tool.name }}
+        </a>
+      </li>
+      }
+    </ul>
+  </section>
+</section>
