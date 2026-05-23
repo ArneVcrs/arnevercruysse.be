@@ -1,12 +1,14 @@
 <picture>
   <source
     [attr.srcset]="srcSet()"
+    type="image/webp"
   />
   <img
     [src]="src()"
     [attr.alt]="alt()"
     [attr.width]="width()"
     [attr.height]="height()"
+    [attr.loading]="loading()"
   />
 </picture>
 @if (caption()) {

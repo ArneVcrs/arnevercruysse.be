@@ -17,7 +17,8 @@ export class Thumbnail {
   public name = input.required<string>();
   public alt = input.required<string>();
   public width = input<number>(640);
-  public height = input<number>();
+  public height = input<number>(360);
+  public loading = input<'lazy' | 'eager'>('lazy');
   public caption = input<string | null>(null);
 
   public srcSet = computed(() => `${this.base()}/${this.name()}_640.webp`);
