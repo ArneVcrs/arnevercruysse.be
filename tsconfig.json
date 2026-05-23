@@ -15,7 +15,8 @@
     "target": "ES2022",
     "module": "preserve",
     "paths": {
-      "content-collections": ["./.content-collections/generated"]
+      "content-collections": ["./.content-collections/generated"],
+      "@/*": ["./src/*"]
     }
   },
   "angularCompilerOptions": {
