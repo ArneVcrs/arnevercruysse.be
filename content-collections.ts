@@ -5,7 +5,7 @@ import { marked } from "marked";
 const blogPosts = defineCollection({
     name: 'blogPosts',
     directory: "src/content/blog",
-    include: "**/*.md",
+    include: ["**/*.md", "!**/blogpost-template.md"],
     schema: z.object({
         title: z.string(),
         date: z.string(),
