@@ -37,6 +37,21 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--spruce-green);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 48rem) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
 .page-content {
   font-family: var(--font-body);
   line-height: 1.6;
@@ -44,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3rem 1rem;
   max-width: 50rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 45vh;
+  box-sizing: border-box;
 }
 
 .card-tagline {
@@ -54,4 +73,13 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.15rem;
   display: block;
   margin-bottom: 0.75rem;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  border-top: 1px solid var(--cream-border);
+  border-bottom: 1px solid var(--cream-border);
+  margin: 0 0 2.5rem 0;
+  max-width: 100%;
 }
