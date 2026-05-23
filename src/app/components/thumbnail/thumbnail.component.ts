@@ -1,5 +1,5 @@
 import { Component, input, computed, ChangeDetectionStrategy } from "@angular/core";
-import config from '../../../../config.json';
+import config from '@/config.json';
 
 interface AppConfig {
   imagesBaseUrl?: string;
