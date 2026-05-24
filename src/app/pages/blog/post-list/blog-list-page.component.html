@@ -1,0 +1,38 @@
+<section class="page-content">
+  <span class="card-tagline">arnev@dev:~$ journalctl -u blog.service</span>
+  <h1>Blog</h1>
+
+  <hr />
+
+  <div class="posts">
+    @for (post of posts$ | async; track post.slug) {
+    <a [routerLink]="'/blog/' + post.slug" class="post-card">
+      <div class="post-card-header">
+        <time class="post-date">{{ post.date }}</time>
+        <span class="post-read-time">{{ post.readingTime }}</span>
+      </div>
+
+      <div class="post-card-body">
+        <div class="post-card-main">
+          <h3 class="post-card-title">{{ post.title }}</h3>
+          <p class="post-excerpt">{{ post.excerpt }}</p>
+          <div class="post-tags">
+            @for (tag of post.tags; track tag) {
+            <span class="tag">#{{ tag }}</span>
+            }
+          </div>
+        </div>
+
+        <div class="post-thumbnail-wrapper">
+          <app-thumbnail [name]="post.thumbnail" [alt]="post.title"></app-thumbnail>
+        </div>
+      </div>
+    </a>
+    } @empty {
+    <div class="no-posts">
+      <p>There are currently no blog posts available...</p>
+    </div>
+    }
+  </div>
+</section>
+
