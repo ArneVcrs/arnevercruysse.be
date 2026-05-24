@@ -31,6 +31,14 @@ body {
   line-height: 1.6;
 }
 
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-paper);
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headings);
   font-weight: 800;
@@ -80,6 +88,6 @@ hr {
   height: 3px;
   border-top: 1px solid var(--cream-border);
   border-bottom: 1px solid var(--cream-border);
-  margin: 0 0 2.5rem 0;
+  margin: 1.5rem 0 2.5rem 0;
   max-width: 100%;
 }
