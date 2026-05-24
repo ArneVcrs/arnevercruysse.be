@@ -16,12 +16,17 @@ export class TurntableComponent {
     filter(event => event instanceof NavigationEnd),
     map(event => {
       const url = (event as NavigationEnd).urlAfterRedirects;
-      switch (url) {
-        case '/': return 'Home';
-        case '/about': return 'About';
-        case '/blog': return 'Blog';
-        default: return 'Unknown';
+      const path = url.split('?')[0].split('#')[0];
+      if (path === '/') {
+        return 'Home';
       }
+      if (path === '/about') {
+        return 'About';
+      }
+      if (path === '/blog' || path.startsWith('/blog/')) {
+        return 'Blog';
+      }
+      return 'Unknown';
     }),
     startWith('Home')
   );
