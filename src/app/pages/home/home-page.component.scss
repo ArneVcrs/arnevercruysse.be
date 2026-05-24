@@ -9,7 +9,6 @@
 app-image {
   width: 100%;
   max-width: 14rem;
-  margin-left: 0;
 }
 
 @media (min-width: 48rem) {
@@ -38,7 +37,7 @@ app-image {
   color: var(--text-paper);
   opacity: 0.85;
   letter-spacing: 0.05rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -50,10 +49,6 @@ app-image {
 }
 
 .intro-text {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--text-paper);
-  opacity: 0.9;
   margin-bottom: 2rem;
 }
 
