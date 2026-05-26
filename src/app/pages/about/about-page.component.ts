@@ -9,8 +9,8 @@ import { Component, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from "@ang
 })
 export class AboutPage {
   public facts = [
-    "I'm 21 years old",
-    "I live in Belgium",
+    "21 years old",
+    "Based in Belgium",
     "I like cooking and gardening",
     "I drink my coffee black",
     "I speak Dutch, English, French, and basic German"
