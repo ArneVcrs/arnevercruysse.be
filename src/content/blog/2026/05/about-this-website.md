@@ -23,6 +23,8 @@ The site is a **static Angular 21 application**. Here are the packages that powe
 - **SCSS** for styling
 - **DigitalOcean Spaces** as a CDN for images
 
+Currently this site is being hosted on [Combell](https://www.combell.com/en/).
+
 ---
 
 ## Project Architecture
