@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, inject, signal, ViewEncapsulation, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject, signal, ViewEncapsulation, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { BlogService } from '@/app/services/blog.service';
@@ -9,7 +9,8 @@ import { BlogService } from '@/app/services/blog.service';
   templateUrl: "./blog-post-page.component.html",
   styleUrl: "./blog-post-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class BlogPostPage implements OnInit {
   private route = inject(ActivatedRoute);

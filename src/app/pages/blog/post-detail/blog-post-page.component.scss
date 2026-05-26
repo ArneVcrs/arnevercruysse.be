@@ -266,6 +266,12 @@ app-blog-post-page {
   }
 }
 
+app-image, app-thumbnail {
+  transform: none;
+  max-width: 32rem;
+  margin: 2rem auto;
+}
+
 @media (max-width: 48rem) {
   app-blog-post-page {
     .article {
