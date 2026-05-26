@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: "./record-bin-nav.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class RecordBinComponentNav {
+export class RecordBinNavComponent {
   routes: RecordBinRoute[] = RECORD_BIN_ROUTES;
 }
 
