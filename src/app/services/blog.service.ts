@@ -7,7 +7,7 @@ import { allBlogPosts, type BlogPost } from 'content-collections';
 })
 export class BlogService {
   public getPosts(): Observable<BlogPost[]> {
-    return of(allBlogPosts.filter(post => post.isPublished));
+    return of(allBlogPosts);
   }
 
   public getPost(slug: string): Observable<BlogPost | undefined> {

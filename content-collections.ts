@@ -11,7 +11,6 @@ const blogPosts = defineCollection({
         date: z.string(),
         thumbnail: z.string(),
         excerpt: z.string(),
-        isPublished: z.boolean().default(false),
         tags: z.array(z.string()).default([]),
         content: z.string(),
     }),
@@ -19,9 +18,9 @@ const blogPosts = defineCollection({
         const wordsPerMinute = 225;
         const noOfWords = post.content.split(/\s/g).length;
         const minutes = Math.ceil(noOfWords / wordsPerMinute);
-        
+
         const html = await marked.parse(post.content);
-        
+
         return {
             ...post,
             html,
