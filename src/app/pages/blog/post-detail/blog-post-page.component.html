@@ -1,0 +1,55 @@
+<section class="wrapper">
+  <nav class="tab" aria-label="Post navigation">
+    <a routerLink="/blog" class="back-link">
+      <span class="arrow" aria-hidden="true">←</span> BACK TO OVERVIEW
+    </a>
+  </nav>
+
+  <div class="page">
+    @if (post()) {
+    <article class="article" aria-labelledby="post-title">
+      <header class="header">
+        <dl class="metadata-grid">
+          <div class="meta-field">
+            <dt class="meta-label">POST ID:</dt>
+            <dd class="meta-val font-mono">#{{ post().slug.split('/').pop() }}</dd>
+          </div>
+          <div class="meta-field">
+            <dt class="meta-label">DATE:</dt>
+            <dd class="meta-val font-mono">
+              <time [attr.datetime]="post().date">{{ post().date }}</time>
+            </dd>
+          </div>
+          <div class="meta-field">
+            <dt class="meta-label">READ TIME:</dt>
+            <dd class="meta-val font-mono">{{ post().readingTime }}</dd>
+          </div>
+          <div class="meta-field">
+            <dt class="meta-label">AUTHOR:</dt>
+            <dd class="meta-val font-mono">ARNE VERCRUYSSE</dd>
+          </div>
+        </dl>
+
+        <h1 id="post-title" class="title">{{ post().title }}</h1>
+
+        <ul class="tags">
+          @for (tag of post().tags; track tag) {
+          <li class="tag">#{{ tag }}</li>
+          }
+        </ul>
+      </header>
+
+      <div class="body">
+        <div class="margin-line" aria-hidden="true"></div>
+        <div class="content" [innerHTML]="htmlContent()"></div>
+      </div>
+
+    </article>
+    } @else {
+    <div class="loading-state" role="status">
+      <p class="handwritten">Loading...</p>
+    </div>
+    }
+  </div>
+</section>
+
