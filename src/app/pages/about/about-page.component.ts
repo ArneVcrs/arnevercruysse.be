@@ -27,7 +27,9 @@ export class AboutPage {
     { name: "Zsh - Shell", link: "https://ohmyz.sh/" },
     { name: "Tailscale - Remote Connection", link: "https://tailscale.com/" },
     { name: "Bitwarden - Password Manager", link: "https://bitwarden.com/" },
-    { name: "Thunderbird - Email Client", link: "https://www.thunderbird.net/" }
+    { name: "Thunderbird - Email Client", link: "https://www.thunderbird.net/" },
+    { name: "Navidrome - Music Server", link: "https://www.navidrome.org/" },
+    { name: "ProtonVPN - VPN Service", link: "https://protonvpn.com/" },
   ];
 }
 
