@@ -2,7 +2,7 @@ import { Component, input, computed, ChangeDetectionStrategy } from "@angular/co
 import config from '@/config.json';
 
 interface AppConfig {
-  imagesBaseUrl?: string;
+  cdnBaseUrl?: string;
 }
 
 @Component({
@@ -12,7 +12,10 @@ interface AppConfig {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Thumbnail {
-  private base = computed(() => (config as AppConfig).imagesBaseUrl ?? '');
+  private base = computed(() => {
+    const cdn = (config as AppConfig).cdnBaseUrl ?? '';
+    return cdn ? `${cdn}/images` : '';
+  });
 
   public name = input.required<string>();
   public alt = input.required<string>();
