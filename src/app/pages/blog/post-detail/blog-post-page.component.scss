@@ -160,9 +160,16 @@ app-blog-post-page {
       margin-bottom: 1.5rem;
     }
 
+    ul {
+      list-style-type: square;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
     li {
       margin-bottom: 0.5rem;
-      list-style-type: square;
     }
 
     blockquote {
