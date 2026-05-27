@@ -5,5 +5,3 @@ thumbnail:
 excerpt: 
 tags: []
 ---
-
-# My Title
