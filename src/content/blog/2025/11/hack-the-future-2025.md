@@ -3,7 +3,7 @@ title: "Hack the Future 2025: Deep Dive into Linux Waters"
 date: 2025-11-12
 thumbnail: htf-thumb
 excerpt: A technical deep-dive into our experience at Hack The Future 2025, where we tackled rootless container namespaces, automated deployment with Ansible, and learned to adapt under time constraints.
-tags: [hackathon, linux, automation, containers]
+tags: [hackathon, linux, podman, ansible, nginx]
 ---
 
 On November 12, 2025, I participated in the Hack The Future hackathon in Antwerp together with [Lauren Cattoor](https://lauren-cattoor.netlify.app/). We enrolled in "Challenge 112: Deep Dive into Linux Waters", a technical scenario organized by [Piros](https://piros.io/) that focused on advanced Linux system administration, networking, and infrastructure automation.
