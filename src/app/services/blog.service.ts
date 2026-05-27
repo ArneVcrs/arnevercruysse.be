@@ -7,7 +7,8 @@ import { allBlogPosts, type BlogPost } from 'content-collections';
 })
 export class BlogService {
   public getPosts(): Observable<BlogPost[]> {
-    return of(allBlogPosts);
+    const sorted = [...allBlogPosts].sort((a, b) => b.date.localeCompare(a.date));
+    return of(sorted);
   }
 
   public getPost(slug: string): Observable<BlogPost | undefined> {
