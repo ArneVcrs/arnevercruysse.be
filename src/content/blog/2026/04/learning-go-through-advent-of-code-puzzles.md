@@ -3,7 +3,7 @@ title: "Learning Go Through Advent Of Code Puzzles"
 date: 2026-04-15
 thumbnail: advent-of-code
 excerpt: "Reflecting on how hands-on, problem-oriented learning always beats passive reading when picking up a new programming language."
-tags: ["tech&meet", "golang", "programming-challenges", "advent-of-code"]
+tags: ["golang", "programming-challenges", "advent-of-code"]
 ---
 
 Passive learning rarely translates into coding proficiency. For me, reading programming textbooks or scanning documentation in isolation simply does not work. The most effective way to internalize a new language is to write code to solve immediate, concrete problems. Recently, I have been using **Advent of Code (AoC)** to learn **Go (Golang)** using this hands-on philosophy.
@@ -42,7 +42,7 @@ Bypassing the AI copilot has allowed me to slow down and learn at my own pace, w
 
 Go is famously opinionated, emphasizing simple, explicit, and "idiomatic" patterns. Unlike other languages that encourage complex class hierarchies or deep object-oriented designs, Go favors flat structures, explicit error handling, and small interfaces. 
 
-By writing AoC solutions without AI assistance, I was forced to search for how native Go developers write code. Rather than letting a Copilot copy-paste patterns from other languages, I studied the official Go documentation, explored community codebases, and searched through the O'Reilly book *Learning Go: An Idiomatic Approach to Real-World Go Programming*. This combination helped me pick up on truly idiomatic Go patterns: handling errors immediately with `if err != nil`, preferring composition over inheritance, and utilizing Go's explicit type systems naturally.
+By writing AoC solutions without AI assistance, I was forced to search for how native Go developers write code. Rather than letting a Copilot copy-paste patterns from other languages, I browsed the official Go documentation, explored community codebases, and searched through the O'Reilly book *Learning Go: An Idiomatic Approach to Real-World Go Programming*. This combination helped me pick up on truly idiomatic Go patterns: handling errors immediately with `if err != nil`, preferring composition over inheritance, and utilizing Go's explicit type systems naturally.
 
 ---
 
