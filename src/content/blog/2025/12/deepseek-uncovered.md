@@ -2,11 +2,11 @@
 title: "Tech&Meet: DeepSeek Uncovered"
 date: 2025-12-09
 thumbnail: deepseek-uncovered
-excerpt: "Analyzing Dimitri Casier's Tech & Meet talk on DeepSeek: how hardware restrictions and clever software engineering optimizations led to a major shift in the AI landscape."
+excerpt: "Analyzing Dimitri Casier's Tech&Meet talk on DeepSeek: how hardware restrictions and clever software engineering optimizations led to a major shift in the AI landscape."
 tags: ["tech&meet", "ai", "deepseek", "open-source", "geopolitics"]
 ---
 
-When hardware access is restricted, software design must adapt. At a recent Howest Tech & Meet lecture, speaker Dimitri Casier explored the rise of DeepSeek, illustrating how a young firm engineered solutions that challenged established AI giants. Using analogies ranging from classic literature to pop culture, the talk demystified the technology behind this shift.
+When hardware access is restricted, software design must adapt. At a recent Howest Tech&Meet lecture, speaker Dimitri Casier explored the rise of DeepSeek, illustrating how a young firm engineered solutions that challenged established AI giants. Using analogies ranging from classic literature to pop culture, the talk demystified the technology behind this shift.
 
 <app-image name="deepseek-uncovered" alt="A picture from Dimitri Casier's Tech&Meet session about DeepSeek"></app-image>
 
