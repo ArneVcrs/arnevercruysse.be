@@ -1,4 +1,9 @@
 import { Component, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
+import config from '@/config.json';
+
+interface AppConfig {
+  cdnBaseUrl?: string;
+}
 
 @Component({
   selector: "app-about-page",
@@ -8,7 +13,8 @@ import { Component, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from "@ang
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AboutPage {
-  public facts = [
+  protected readonly cvUrl = `${(config as AppConfig).cdnBaseUrl ?? ''}/files/CV-Arne-Vercruysse.pdf`;
+  protected facts = [
     "21 years old",
     "Based in Belgium",
     "I like cooking and gardening",
@@ -17,7 +23,7 @@ export class AboutPage {
   ];
 
 
-  public tools = [
+  protected tools = [
     { name: "Visual Studio Code - IDE", link: "https://code.visualstudio.com/" },
     { name: "Obsidian - Notetaking", link: "https://obsidian.md/" },
     { name: "Restic - Back-ups", link: "https://restic.readthedocs.io/en/stable/" },
