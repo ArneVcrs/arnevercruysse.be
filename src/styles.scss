@@ -39,6 +39,23 @@ p {
   margin-bottom: 0;
 }
 
+a {
+  color: var(--spruce-green);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--gold-ochre);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--gold-ochre);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headings);
   font-weight: 800;
