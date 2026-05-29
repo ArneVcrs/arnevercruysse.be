@@ -2,6 +2,15 @@
   <span>
     &copy; {{ currentYear }} <strong>Arne Vercruysse</strong>
   </span>
+
+  <div class="social-links">
+    @for (link of socialLinks; track link.name) {
+      <a [href]="link.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="link.ariaLabel">
+        <span class="icon" [style.mask-image]="'url(' + link.iconUrl + ')'" ></span>
+      </a>
+    }
+  </div>
+
   <a href="mailto:arne@arnevercruysse.be" aria-label="Email Arne Vercruysse">
     arne@arnevercruysse.be
   </a>
