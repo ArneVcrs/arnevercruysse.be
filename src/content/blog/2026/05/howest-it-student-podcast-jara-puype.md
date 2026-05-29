@@ -45,6 +45,6 @@ The interview concluded with concrete suggestions for frontend engineers:
 
 Designing accessible software is not just about meeting compliance checkers; it is about empathy for the end user. Ensuring clear failure states, descriptive navigation, and consistent patterns helps close the digital divide. Many thanks to Jara Puype for sharing her experiences from the field.
 
-You can listen to the entire (Dutch-spoken) episode on [Spotify](https://open.spotify.com/show/7HVRINnrOMwIpJrvJMojTx).
+You can listen to the entire (Dutch-spoken) episode on [Spotify](https://open.spotify.com/episode/01BU7yW8bRhsmf2gVjsfa4).
 
 Here is also a link to Jara's [LinkedIn Page](https://www.linkedin.com/in/jara-puype/) and the [Digidee Website](https://www.digidee.be/).
