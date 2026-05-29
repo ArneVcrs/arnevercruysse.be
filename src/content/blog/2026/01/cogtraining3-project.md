@@ -207,4 +207,4 @@ Sadly, because the platform processes sensitive patient records and functions as
 
 ---
 
-Interested in reading the full academic paper? You can [download our bachelor's thesis (PDF, written in Dutch)](https://arnevercruysse.ams3.cdn.digitaloceanspaces.com/files/Bachelorproef-CogTraining3.pdf) for a deeper look into this project.
+Interested in reading the full academic paper? You can <a href="https://arnevercruysse.ams3.cdn.digitaloceanspaces.com/files/Bachelorproef-CogTraining3.pdf" download target="_blank" rel="noopener noreferrer">download our bachelor's thesis (PDF, written in Dutch)</a> for a deeper look into this project.
