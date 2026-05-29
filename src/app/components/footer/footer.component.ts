@@ -7,5 +7,20 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
-  public readonly currentYear = new Date().getFullYear();
+  protected readonly currentYear = new Date().getFullYear();
+
+  protected readonly socialLinks = [
+    {
+      name: 'github',
+      url: 'https://github.com/ArneVcrs',
+      ariaLabel: 'GitHub profile of Arne Vercruysse',
+      iconUrl: '/icons/github.svg'
+    },
+    {
+      name: 'linkedin',
+      url: 'https://www.linkedin.com/in/arne-vercruysse',
+      ariaLabel: 'LinkedIn profile of Arne Vercruysse',
+      iconUrl: '/icons/linkedin.svg'
+    }
+  ];
 }
