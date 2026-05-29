@@ -19,8 +19,6 @@ export class Image {
 
   public name = input.required<string>();
   public alt = input.required<string>();
-  public width = input<number>();
-  public height = input<number>();
   public loading = input<'lazy' | 'eager'>('lazy');
   public caption = input<string | null>(null);
 
