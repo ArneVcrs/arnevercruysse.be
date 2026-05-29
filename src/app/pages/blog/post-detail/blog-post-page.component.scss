@@ -66,6 +66,10 @@ app-blog-post-page {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 4px;
+
+    @media (min-width: 48rem) {
+      grid-template-columns: 2.2fr 1fr 1fr 1fr;
+    }
   }
 
   .meta-field {
@@ -88,6 +92,7 @@ app-blog-post-page {
   .meta-val {
     font-size: 0.8rem;
     color: var(--text-paper);
+    overflow-wrap: anywhere;
   }
 
   .title {
