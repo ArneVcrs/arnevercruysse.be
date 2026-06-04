@@ -17,11 +17,17 @@ export class Thumbnail {
     return cdn ? `${cdn}/images` : '';
   });
 
-  public name = input.required<string>();
-  public alt = input.required<string>();
+  public name = input<string>('');
+  public alt = input<string>('');
   public loading = input<'lazy' | 'eager'>('lazy');
   public caption = input<string | null>(null);
 
-  public srcSet = computed(() => `${this.base()}/${this.name()}_640.webp`);
-  public src = computed(() => `${this.base()}/${this.name()}_640.jpg`);
+  public srcSet = computed(() => {
+    const name = this.name();
+    return name ? `${this.base()}/${name}_640.webp` : '';
+  });
+  public src = computed(() => {
+    const name = this.name();
+    return name ? `${this.base()}/${name}_640.jpg` : '';
+  });
 }
