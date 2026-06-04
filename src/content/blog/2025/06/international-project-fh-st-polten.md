@@ -24,7 +24,7 @@ The return journey, however, came with a little surprise. I hadn't realized when
 
 The core of our week was dedicated to reinforcement learning and autonomous driving. Working in international teams, we were tasked with training a model to make an **AWS DeepRacer** (a 1/18th scale model car equipped with a camera) navigate a track autonomously. 
 
-<app-image name="st-polten-deepracer" alt="Howest students holding an AWS DeepRacer car" caption="The Howest students posing with the AWS DeepRacer car."></app-image>
+<app-image name="st-polten-deepracer" alt="Me holding an AWS DeepRacer car" caption="Me with the AWS DeepRacer car."></app-image>
 
 To train our model, we took a hands-on approach: we first drove the car manually around the track using a controller to collect driving data. With this dataset, we trained the model to clone our driving behavior. Our car performed quite well during the final competition, where every team tried to set the fastest lap on the physical track. 
 
