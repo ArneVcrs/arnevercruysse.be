@@ -21,5 +21,9 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/blog/post-detail/blog-post-page.component').then(m => m.BlogPostPage)
       }
     ]
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
